@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_graph"
+    app:startDestination="@id/homeFragment">
+
+    <action
+        android:id="@+id/action_to_infoFilmsFragment"
+        app:destination="@id/infoFilmsFragment" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.moviemood.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_infoFilmsFragment"
+            app:destination="@id/infoFilmsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFilmsFragment"
+        android:name="com.example.moviemood.ui.info.InfoFilmsFragment"
+        android:label="InfoFilmsFragment"
+        tools:layout="@layout/fragment_info_films">
+        <argument
+            android:name="idFilms"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/filtersFragment"
+        android:name="com.example.moviemood.ui.filters.FiltersFragment"
+        android:label="FiltersFragment">
+        <argument
+            android:name="genre"
+            app:argType="string" />
+        <argument
+            android:name="genreId"
+            app:argType="integer"/>
+        <argument
+            android:name="country"
+            app:argType="string" />
+        <argument
+            android:name="countryId"
+            app:argType="integer"/>
+        <action
+            android:id="@+id/action_filtersFragment_to_genreFragment"
+            app:destination="@id/genreFragment" />
+        <action
+            android:id="@+id/action_filtersFragment_to_countryFragment"
+            app:destination="@id/countryFragment" />
+        <action
+            android:id="@+id/action_filtersFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/genreFragment"
+        android:name="com.example.moviemood.ui.filters.GenreFragment"
+        android:label="GenreFragment">
+        <argument
+            android:name="country"
+            app:argType="string" />
+        <argument
+            android:name="countryId"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_genreFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/countryFragment"
+        android:name="com.example.moviemood.ui.filters.CountryFragment"
+        android:label="CountryFragment">
+        <argument
+            android:name="genre"
+            app:argType="string" />
+        <argument
+            android:name="genreId"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_countryFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+    </fragment>
+
+</navigation>

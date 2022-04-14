@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "416442104782",
+    "project_id": "moviemood2-fe0cd",
+    "storage_bucket": "moviemood2-fe0cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416442104782:android:78827b3154edf4e20b099f",
+        "android_client_info": {
+          "package_name": "com.example.moviemood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416442104782-lefoghhu3of46eg7os750p6u474g7idu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moviemood",
+            "certificate_hash": "a30d5d222cdc22e8b428642e13b97fe303a07538"
+          }
+        },
+        {
+          "client_id": "416442104782-d4as2c7oa47pggo17hpgrqkk4296kuot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA44k2-1SjyUd0eM1cN9gqvIkMDVr3XwfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "416442104782-d4as2c7oa47pggo17hpgrqkk4296kuot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

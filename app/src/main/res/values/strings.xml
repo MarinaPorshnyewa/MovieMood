@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MovieMood</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Error">Error</string>
+    <string name="registration">Registration</string>
+    <string name="Incorrect_email">Incorrect email</string>
+    <string name="Password_length">Password length: >8 </string>
+    <string name="Does_not_match">Does not match</string>
+    <string name="User_email_error">User with this email exists</string>
+    <string name="Home">Home</string>
+    <string name="Favorites">Favorites</string>
+    <string name="Hello">Hello!</string>
+    <string name="Title_movie">Title movie</string>
+    <string name="Slogan_movie">Slogan movie</string>
+    <string name="Decelerated_movie">Decelerated movie</string>
+    <string name="Genre_movie">Genre</string>
+    <string name="email_helper_text">Enter your email</string>
+    <string name="hello_with_name">Hello, </string>
+    <string name="something_wrong">Something goes wrong. Check your password</string>
+    <string name="top250">Top-250</string>
+    <string name="top100">Top pop</string>
+    <string name="top_awaits">Top awaits</string>
+
+</resources>

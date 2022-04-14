@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/favorites_graph"
+    app:startDestination="@id/favoritesFilmsFragment">
+
+    <fragment
+        android:id="@+id/favoritesFilmsFragment"
+        android:name="com.example.moviemood.ui.favorites.FavoritesFilmsFragment"
+        android:label="FavoritesFilmsFragment" >
+        <action
+            android:id="@+id/action_favoritesFilmsFragment_to_infoFilmsFragment5"
+            app:destination="@id/infoFilmsFragment5" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFilmsFragment5"
+        android:name="com.example.moviemood.ui.info.InfoFilmsFragment"
+        android:label="InfoFilmsFragment">
+        <argument
+            android:name="idFilms"
+            app:argType="integer" />
+    </fragment>
+</navigation>
